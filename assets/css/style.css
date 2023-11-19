@@ -267,7 +267,7 @@ form-control:focus {
 }
 
 .btn-1:hover {
-    color: var(--dark-color);
+    color: var(--light-color);
     background: var(--main-color);
     border: 2px solid var(--main-color);
 }
@@ -507,7 +507,7 @@ form-control:focus {
 .title2 h2 {
     font-family: 'Quicksand-Bold';
     font-size: 36px;
-    color: #ffffff;
+    color: var(--dark-color);
     margin-bottom: 7px;
     letter-spacing: 0.4px;
 }
@@ -1511,7 +1511,7 @@ a[aria-expanded="true"] {
     list-style: none;
 }
 
-#section-navbar2 .wrap-dropdown .dropdown-item{
+#section-navbar2 .wrap-dropdown .dropdown-item {
     color: var(--light-color);
 }
 
@@ -3140,7 +3140,7 @@ a.scroll-down:before {
     /* background: var(--dark-color); */
 }
 
-#section-allstarted .left h6{
+#section-allstarted .left h6 {
     font-family: 'Quicksand-Bold';
     color: var(--main-color);
     font-size: 14px;
@@ -3188,7 +3188,7 @@ a.scroll-down:before {
     border-radius: 4px;
 }
 
-#section-allstarted .item:hover{
+#section-allstarted .item:hover {
     border-color: var(--main-color);
 }
 
@@ -3684,7 +3684,7 @@ a.scroll-down:before {
  *===============================*/
 #section-ourportfolio3 {
     padding: 120px 0;
-    background: #12141c;
+    background: var(--light-color);
 }
 
 #section-ourportfolio3 .filter {
@@ -3708,6 +3708,7 @@ a.scroll-down:before {
     right: 0;
     margin: 0 auto 20px;
     text-align: center;
+    width: 100%;
 }
 
 #section-ourportfolio3 .portfolioFilter a {
@@ -3850,7 +3851,13 @@ a.scroll-down:before {
  *====================================*/
 #section-portfoliodetails1 {
     padding: 120px 0;
-    background: var(--dark-color);
+    background: var(--light-color);
+}
+
+@media only screen and (min-width: 1200px) {
+    #section-portfoliodetails1 .container {
+        max-width: 1000px;
+    }
 }
 
 #section-portfoliodetails1 .list-thumbnail .item {
@@ -3871,7 +3878,7 @@ a.scroll-down:before {
 #section-portfoliodetails1 .contents .project-description h3 {
     font-family: 'Quicksand-Bold';
     font-size: 18px;
-    color: #ffffff;
+    color: var(--dark-color);
     margin-bottom: 26px;
 }
 
@@ -3892,6 +3899,8 @@ a.scroll-down:before {
 
 #section-portfoliodetails1 .contents .main-image {
     margin-bottom: 58px;
+    width: 100%;
+    border-radius: 4px;
 }
 
 #section-portfoliodetails1 .contents .main-image-detail ul {
@@ -3912,13 +3921,13 @@ a.scroll-down:before {
  * Sidebar
  */
 #section-portfoliodetails1 .contents .sidebar-description .item {
-    margin-bottom: 52px;
+    margin-bottom: 24px;
 }
 
 #section-portfoliodetails1 .contents .sidebar-description .item h4 {
     font-family: 'Quicksand-Bold';
     font-size: 16px;
-    color: #ffffff;
+    color: var(--dark-color);
     margin-bottom: 3px;
 }
 
@@ -3932,7 +3941,7 @@ a.scroll-down:before {
 #section-portfoliodetails1 .related-projects h2 {
     font-family: 'Quicksand-Bold';
     font-size: 26px;
-    color: #ffffff;
+    color: var(--dark-color);
     margin-bottom: 60px;
 }
 
@@ -3989,16 +3998,16 @@ a.scroll-down:before {
 #section-portfoliodetails1 .related-projects .overlay p {
     font-family: 'Quicksand-Regular';
     font-size: 12px;
-    color: #878787;
+    color: #fafafa;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 6px;
 }
 
 #section-portfoliodetails1 .related-projects .overlay span:after {
     font-family: flaticon;
     content: '\f10b';
-    color: #454a53;
+    color: #fafafa;
     font-size: 25px;
 }
 
@@ -4323,7 +4332,7 @@ a.scroll-down:before {
 .sidebar .category ul li {
     list-style: none;
     margin-bottom: 12px;
-    
+
 }
 
 .sidebar .category ul li a {
@@ -4339,7 +4348,7 @@ a.scroll-down:before {
     cursor: pointer;
 }
 
-.sidebar .category ul li a:hover ,
+.sidebar .category ul li a:hover,
 .sidebar .category ul li a.active {
     background-color: var(--main-color);
     color: #fff;
@@ -4835,7 +4844,7 @@ a.scroll-down:before {
     transition: .2s all ease-in-out;
 }
 
-#section-contact .contact-details .item:hover{
+#section-contact .contact-details .item:hover {
     background-color: #fff;
 }
 
@@ -4853,7 +4862,7 @@ a.scroll-down:before {
     justify-content: center;
 }
 
-#section-contact .contact-details .item:hover .thumb-icon{
+#section-contact .contact-details .item:hover .thumb-icon {
     background-color: var(--main-color);
 }
 
@@ -4871,11 +4880,11 @@ a.scroll-down:before {
     text-align: center;
 }
 
-#section-contact .contact-details .item .description p{
+#section-contact .contact-details .item .description p {
     color: #fff;
 }
 
-#section-contact .contact-details .item:hover .description p{
+#section-contact .contact-details .item:hover .description p {
     color: var(--dark-color);
 }
 
@@ -6146,7 +6155,7 @@ a.scroll-down:before {
         padding: 67px 15px;
     }
 
-    #section-allstarted .item.style2 ,
+    #section-allstarted .item.style2,
     #section-allstarted .item.style4 {
         left: -300px;
         position: relative;
@@ -7823,11 +7832,11 @@ a.scroll-down:before {
     }
 }
 
-.items-list{
+.items-list {
     padding: 0;
 }
 
-.items-list li{
+.items-list li {
     padding: .5rem 1rem;
     margin: 1rem 0;
     list-style-type: none;
@@ -7837,7 +7846,58 @@ a.scroll-down:before {
     border-radius: 4px;
 }
 
-.items-list li:hover{
+.items-list li:hover {
     background-color: var(--main-color);
     color: #fff;
+}
+
+.solution-sec {
+    padding: 120px 0;
+}
+
+.solution-sec .right {
+    position: relative;
+}
+
+.solution-sec .right::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--main-color);
+    left: -20px;
+    top: -30px;
+    /* opacity: .5; */
+}
+
+.solution-sec .right img {
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.solution-sec2 .title2 h2:after {
+    max-width: 270px;
+    left: 0;
+    right: unset;
+    top: -21px;
+}
+
+.careers-page .title2 h2:after{
+    left: 0;
+    top: -14px;
+    right: unset;
+    max-width: 200px;
+}
+
+#section-ourportfolio3 .portfolioContainer .item,
+#section-ourportfolio3 .portfolioContainer a,
+#section-ourportfolio3 .portfolioContainer .img-container{
+    width: 100%;
+}
+
+#section-ourportfolio3 .portfolioContainer .img-container img{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
